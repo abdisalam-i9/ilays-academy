@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: #f8fafc;
+    color: #111827;
+}
+
+/* HEADER */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 20px 8%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+}
+
+.header h1{
+    color: #2563eb;
+    font-size: 32px;
+}
+
+.header ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.list li a{
+    text-decoration: none;
+    color: #111827;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.list li a:hover{
+    color: #2563eb;
+}
+
+/* HERO */
+
+.pool{
+    padding-top: 140px;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.pool h4{
+    color: #2563eb;
+    font-size: 20px;
+}
+
+.pool h1{
+    font-size: 50px;
+    padding-top: 15px;
+}
+
+.pool p{
+    color: #4b5563;
+    padding-top: 15px;
+    line-height: 1.7;
+}
+
+/* MAIN BOXES */
+
+.bush{
+    width: 90%;
+    margin: 60px auto;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* LEFT */
+
+.qa{
+    flex: 2;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.qa:hover{
+    transform: translateY(-8px);
+}
+
+.qa i{
+    color: #2563eb;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.qa h2{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.qa p{
+    color: #4b5563;
+    line-height: 1.7;
+}
+
+/* ICON ROW */
+
+.ahmed{
+    display: flex;
+    gap: 20px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.ahmed div{
+    background: #eff6ff;
+    padding: 15px 20px;
+    border-radius: 10px;
+    color: #2563eb;
+    font-weight: bold;
+}
+
+/* RIGHT */
+
+.map{
+    flex: 1;
+    background: linear-gradient(135deg,#2563eb,#1e3a8a);
+    padding: 35px;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.map h2{
+    font-size: 28px;
+}
+
+.map p{
+    padding-top: 20px;
+    line-height: 1.7;
+}
+
+.map i{
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+/* SECOND BOX */
+
+.ii{
+    width: 90%;
+    margin: auto;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.ii i{
+    color: #2563eb;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.ii h2{
+    font-size: 30px;
+}
+
+.ii p{
+    padding-top: 15px;
+    color: #4b5563;
+    line-height: 1.8;
+}
+
+/* FEATURES */
+
+.llow{
+    text-align: center;
+    margin-top: 90px;
+}
+
+.llow h1{
+    font-size: 40px;
+}
+
+.llow p{
+    padding-top: 10px;
+    color: #4b5563;
+}
+
+/* CARDS */
+
+.ee{
+    width: 90%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 30px;
+}
+
+.beel{
+    background: white;
+    padding: 35px 25px;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.beel:hover{
+    transform: translateY(-10px);
+}
+
+.beel h3{
+    color: #2563eb;
+    font-size: 24px;
+}
+
+.beel p{
+    padding-top: 15px;
+    color: #4b5563;
+    line-height: 1.7;
+}
+
+/* CONTACT */
+
+.lay{
+    width: 90%;
+    margin: 100px auto;
+    background: #eff6ff;
+    padding: 60px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.lay h1{
+    font-size: 40px;
+    color: #111827;
+}
+
+.lay p{
+    padding-top: 15px;
+    color: #4b5563;
+}
+
+/* FOOTER */
+
+.loyer{
+    background: #111827;
+    color: white;
+    padding: 30px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.emplo{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.emplo li{
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.emplo li:hover{
+    color: #60a5fa;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .header{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .header ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .pool h1{
+        font-size: 38px;
+    }
+
+    .bush{
+        flex-direction: column;
+    }
+
+    .qa,
+    .map,
+    .ii{
+        width: 100%;
+    }
+
+    .lay{
+        padding: 40px 20px;
+    }
+
+    .loyer{
+        text-align: center;
+        gap: 20px;
+    }
+}

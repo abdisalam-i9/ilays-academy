@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #f8fafc;
+    color: #111827;
+}
+
+/* HEADER */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 20px 8%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.header h1{
+    color: #2563eb;
+    font-size: 32px;
+}
+
+.header ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.list li a{
+    text-decoration: none;
+    color: #111827;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.list li a:hover{
+    color: #2563eb;
+}
+
+/* HERO SECTION */
+
+.told{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    gap: 60px;
+    padding-top: 140px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.tex{
+    flex: 1;
+}
+
+.tex h2{
+    font-size: 50px;
+    line-height: 1.2;
+}
+
+.tex span{
+    color: #2563eb;
+}
+
+.tex p{
+    padding-top: 20px;
+    color: #4b5563;
+    line-height: 1.7;
+}
+
+.old img{
+    width: 500px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* SERVICES */
+
+.lol{
+    background-color: #eff6ff;
+    padding: 80px 0;
+    margin-top: 70px;
+}
+
+.hooltex{
+    text-align: center;
+}
+
+.hooltex h1{
+    font-size: 40px;
+    color: #111827;
+}
+
+.hooltex p{
+    padding-top: 10px;
+    color: #4b5563;
+}
+
+.Bow1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 30px;
+    width: 90%;
+    margin: 50px auto;
+}
+
+.saas{
+    background-color: white;
+    padding: 35px 20px;
+    border-radius: 15px;
+    transition: 0.3s;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.saas:hover{
+    transform: translateY(-10px);
+}
+
+.Bow1 i{
+    color: #2563eb;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.Bow1 h3{
+    padding-top: 10px;
+    color: #111827;
+}
+
+.Bow1 p{
+    padding-top: 10px;
+    color: #4b5563;
+    line-height: 1.6;
+}
+
+/* ABOUT */
+
+.hon{
+    width: 90%;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.grow img{
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.qiil{
+    flex: 1;
+}
+
+.qiil h4{
+    color: #2563eb;
+    padding-top: 10px;
+}
+
+.qiil h3{
+    font-size: 35px;
+    padding-top: 10px;
+}
+
+.qiil p{
+    padding-top: 15px;
+    color: #4b5563;
+    line-height: 1.7;
+}
+
+/* INFO */
+
+.han{
+    margin-top: 20px;
+}
+
+.han h2{
+    color: #2563eb;
+    font-size: 28px;
+}
+
+.han p{
+    padding-top: 10px;
+    color: #374151;
+}
+
+.han span{
+    color: #2563eb;
+    font-weight: bold;
+}
+
+/* STATS */
+
+.xiis{
+    display: flex;
+    gap: 50px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.niin{
+    background: white;
+    padding: 20px 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.niin h2{
+    color: #2563eb;
+    font-size: 30px;
+}
+
+.niin h6{
+    padding-top: 5px;
+    color: #4b5563;
+}
+
+/* FOOTER */
+
+.loyer{
+    background-color: #111827;
+    color: white;
+    padding: 25px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.emplo{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.emplo li{
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.emplo li:hover{
+    color: #60a5fa;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .header{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .header ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .tex h2{
+        font-size: 38px;
+    }
+
+    .old img,
+    .grow img{
+        width: 100%;
+    }
+
+    .told{
+        text-align: center;
+    }
+
+    .hon{
+        text-align: center;
+    }
+
+    .xiis{
+        justify-content: center;
+    }
+
+    .loyer{
+        text-align: center;
+        gap: 20px;
+    }
+}
